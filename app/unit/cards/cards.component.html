@@ -1,0 +1,18 @@
+<!-- <div class="row row-cols-1 row-cols-md-3 g-4"> -->
+<div class="container">
+   <div class="row row-cols-1 row-cols-md-3 g-4">
+
+@for(item of departments;track item.id){
+    <div class="col">
+      <div class="card h-100">
+        <img src="{{item.Image}}" class="card-img-top" alt="department" height="300px">
+        <div class="card-body">
+          <h5 class="card-title">{{item.Title}}</h5>
+          <p class="card-text">{{item.Description}}</p>
+          <a href="#" class="btn btn-primary" style="margin: 20px;">Load more</a>
+        </div>
+      </div>
+    </div>  
+}
+    </div>
+  </div>
